@@ -73,6 +73,47 @@
     }
   }
 }
+.carousel-caption {
+  margin-top: 10px;
+  position: relative;
+  left: auto;
+  right: auto;
+  color: #333333;
+  font: sans-serif;
+  font-size: 10px;
+  
+}
+
+@include respond(phone) {
+  margin-bottom: 2.5rem !important;
+}
+@include respond(tab-land) {
+  margin-bottom: 4.8rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 80px;
+  width: 80px;
+  outline: blueviolet;
+  background-size: 50%, 50%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: blue;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: blue;
+}
 
 /* Resume Style */
 .cta-btn--resume {

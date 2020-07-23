@@ -68,6 +68,14 @@ export default function() {
       }, defaultProps)
   );
 
+  ScrollReveal().reveal('.cca-wrapper', 
+    assignProps(
+      {
+        delay: 1000,
+        origin: window.innerWidth > 768 ? 'right' : 'bottom'
+      }, defaultProps)
+  );
+
   /* Contact Section */
   ScrollReveal().reveal('.contact-wrapper', 
     assignProps(
