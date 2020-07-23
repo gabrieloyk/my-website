@@ -75,20 +75,26 @@
 }
 .carousel-caption {
   margin-top: 10px;
-  position: relative;
+  position: bottom;
   left: auto;
   right: auto;
   color: #333333;
-  font: sans-serif;
-  font-size: 10px;
-  
-}
+  font-family: monospace;
+  font-style: normal;
+  //background: darken($secondary-color, 1%);
+          display:inline;
+          font-style: italic;
+          //padding: 0 0.3rem;
+          //margin: 0.3rem 0;
+          //line-height: 1.6;
 
-@include respond(phone) {
-  margin-bottom: 2.5rem !important;
-}
-@include respond(tab-land) {
-  margin-bottom: 4.8rem;
+          @include respond(phone) {
+            display: inline;
+            margin: 0;
+            padding: 0;
+            background: transparent;
+            font-style: normal;
+          }
 }
 
 // .carousel-control-prev-icon,
