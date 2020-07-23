@@ -9,6 +9,22 @@
     padding-top: 5rem;
   }
 
+  .cca-wrapper {
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+
+    @include respond(phone) {
+      margin-bottom: 0rem;
+    }
+
+    .row {
+      margin-bottom: 8rem;
+
+      @include respond(phone) {
+        margin-bottom: 4rem;
+      }
+    }
+  }
   .project-wrapper {
     margin-bottom: 15rem;
 
